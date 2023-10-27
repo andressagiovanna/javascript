@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style> /* COMENTÁRIO EM CSS */
+        body {
+            background-color: lightblue;
+            color: cornflowerblue;
+            font: normal arial;
+            text-align: center;
+        }
+        
+        h1 {
+            color: crimson;
+            text-align: center;
+            font-size: 4em;
+        }
+
+        p#maldicao {
+            font-size: 2em;
+        }
+
+        p.informacao {
+            text-align: left;
+            color: black;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+    </style>
+
+    <title>Meu primeiro Programa</title>
+</head> <!-- COMENTÁRIO EM HTML -->
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p id="maldicao">Já me livrei da maldição</p>
+
+    <p class="informacao">
+        STRING -> NÚMERO<br>
+<!--Ou parseInt(n)--> - Number.parseInt(n): De um número para Número Inteiro.<br>
+<!--Ou parseFloat(n)--> - Number.parseFloat(n): Número Real, Número com ,.<br>
+- Number(n)
+    </p>
+    <p class="informacao">
+        NÚMERO -> STRING<br>
+        - String(n)<br>
+        - n.toString()<br>
+    </p>
+    <script> 
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert(`a soma entre ${n1} e ${n2} é igual a ${s}`)
+        // PROMPT trata como STRING 
+        // number + number -> ADIÇÃO
+        // string + string -> CONCATENAÇÃO
+        // parse -> Converter / Parsear
+        // ${} -> placeholder
+
+        /*
+        Formatando String
+
+        - var s = 'JavaScript'
+
+        'Eu estou aprendendo s' -> Não faz interpolação
+        'Eu estou aprendendo' + s -> Usa Concatenação
+        `Eu estou aprendendo ${s}` -> Usa Template String
+
+        - var s = 'JavaScript'
+
+        s.length -> Quantos caracteres a String tem
+        s.toUpperCase() -> Tudo para 'MAIÚSCULAS'
+        s.toLowerCase() -> Tudo para 'minúsculas'
+        */
+
+    </script>
+
+</body>
+</html>
