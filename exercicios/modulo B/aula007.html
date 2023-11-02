@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Básicos do JavaScript</title>
+</head>
+<body>
+    <h1>Operadores</h1>
+    <p>
+        - Aritméticos<br>
+        - Atribuição<br>
+        - Relacionais<br>
+        - Lógicos<br>
+        - Ternário<br>
+    </p>
+
+    <h2>Aritméticos</h2>
+    <p>
+        - 5 + 2 -> 7<br>
+        - 5 - 2 -> 3<br>
+        - 5 * 2 -> 10<br>
+        - 5 / 2 -> 2.5 (Para o JS é uma divisão <strong>REAL</strong>, que leva a vírgula)<br>
+        - 5 % 2 -> 1 (% -> <strong>Resto</strong> da divisão inteira)<br>
+        - 5 ** 2 -> 25 (** -> Potência)
+    </p>
+    
+    <h2>Precedência</h2>
+    <p>
+        - () -> 1º PARÊNTESES<br>
+        - ** -> 2º POTÊNCIA<br>
+        - * / % -> 3º MULTIPLICAÇÃO, DIVISÃO e o RESTO DA DIVISÃO (valendo o que vem da esquerda pra direita)<br>
+        - + - -> 4º ADIÇÃO, SUBTRAÇÃO
+    </p>
+
+    <h2>Atribuição Simples</h2>
+    <p>
+        var a = 5 + 3  -> 8<br>
+        var b = a % 3  -> 3<br>
+        var c = 5 * b ** 2  -> 45<br> 
+        var d = 10 - a / 2  -> 6<br>
+        var e = 6 * 2 / d -> 2<br>
+        var f = b % e + 4 / e -> 3<br>
+    </p>
+
+    <h2>Auto-atribuição</h2>
+    <p>
+        var n = 3<br>
+        <br>
+        n = n + 4 -> n = 7<br>
+        n = n - 5 -> n = 2<br>
+        n = n * 4 -> n = 8<br>
+        n = n / 2 -> n = 4<br>
+        n = n ** 2 -> n = 16<br>
+        n = n % 5 -> n = 1<br>
+    </p>
+
+    <h2>Auto-referência (SIMPLIFICADO)</h2>
+    <p>
+        var n = 3<br>
+        <br>
+        n = n + 4 -> n += 4 <br>
+        n = n - 5 -> n -= 5<br>
+        n = n * 4 -> n *= 4<br>
+        n = n / 2 -> n /= 2<br>
+        n = n ** 2 -> n **= 2<br>
+        n = n % 5 -> n %= 5<br>
+    </p>
+
+    <h2>Incremento</h2>
+    <p>
+        var x = 5<br>
+        <br>
+        x = x + 1 -> ++ x (Pré)<br>
+        x = x - 1 -> -- x (Pré)<br>
+        <br>
+        x = x + 1 -> x ++ (Pós)<br>
+        x = x - 1 -> x -- (Pós)<br>
+    </p>
+</body>
+</html>
