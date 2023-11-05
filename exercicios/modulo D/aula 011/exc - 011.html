@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra seu País</title>
+</head>
+<body>
+    <h1>Sou Estrangeiro ou Brasileiro</h1>
+    Eu moro em: 
+    <input type="text" name="pais" id="ipais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var pais = document.querySelector('input#ipais').value
+            var res = document.querySelector('div#res')
+            var ipais = 'Brasil'
+
+            if (pais != 'Brasil') {
+                res.innerHTML += `<p><p>Você é <strong>Estrangeiro</strong></p>`
+            } else {
+                res.innerHTML += `<p><p>Você é <strong>Brasileiro</strong></p>`
+            }
+            }
+    </script>
+</body>
+</html>
+
+<!--
+
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra seu País</title>
+</head>
+<body>
+    <h1>Sou Estrangeiro ou Brasileiro</h1>
+    Eu moro em: 
+    <input type="text" name="pais" id="ipais">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular() {
+            var ipais = document.querySelector('input#ipais').value;
+            var res = document.querySelector('div#res');
+            
+            if (ipais === 'Brasil') {
+                res.innerHTML = '<p>Você é <strong>Brasileiro</strong></p>';
+            } else {
+                res.innerHTML = '<p>Você é <strong>Estrangeiro</strong></p>';
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+-->
