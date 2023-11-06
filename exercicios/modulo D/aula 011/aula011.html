@@ -8,23 +8,56 @@
 <body>
     <h1>Condições - Parte 1</h1>
     <p>
-        if (Condição - "SE,") {<br>
+        if (Condição - "SE,") {
             TRUE
-        } else ("SENÃO,") {<br>
+        } else ("SENÃO,") {
             FALSE
-        }<br>
-        <br>
-        - Condição Simples:<br>
-            if {<br>
-                ...<br>
-            }<br>
-            <br>
-            <br>
-            <br>
-            if {<br>
-                ......<br>
-            } else {<br>
-                ......<br>
-            }<br>
+        }
+        
+        - Condição Simples:
+            if {
+                ...
+            }
+
+            Condição Composta
+            if {
+                ......
+            } else {
+                ......
+            }
+    </p>
+
+    <h1>Condinções - Parte 2</h1>
+    <h2>Condições Aninhadas</h2>
+    <p>
+        if (COND1) {
+            Bloco 1 - FALSO
+        } else {
+            <con-anin>
+                if (COND2) {
+                    Bloco 2
+                } else {
+                    Bloco 3
+                }
+            </con-anin>
+        }
+    </p>
+
+    <h2>Condição Múltipla</h2>
+    <p>
+        switch (EXPRESSÃO) {
+            case valor 1:
+                bloco
+                BREAK (obrigatório)
+            case valor 2:
+                bloco
+                BREAK
+            case valor 3:
+                bloco
+                BREAK
+            default:
+                BREAK
+        }
+    </p>
 </body>
 </html>
